@@ -1,0 +1,82 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Перевод денег с аккаунта А на аккаунт Б (positive)",
+        "description": "",
+        "id": "transfer-with-mbank;перевод-денег-с-аккаунта-а-на-аккаунт-б-(positive)",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "У нас уже банк \"Commercial Bank Kyrgyzstan\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "Пользователь с номером счета 12345  и с email \"sanira@gmail.com\" и с балансом на счету $1000 зарегистрирована на банке \"Commercial Bank Kyrgyzstan\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Пользователь с номером счета 111111  и с email \"aidana@gmail.com\" и с балансом на счету $2000 зарегистрирована на банке \"Commercial Bank Kyrgyzstan\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "Пользователь с номером 12345 должен отправить $200 на счет 111111 на email \"aidana@gmail.com\" в \"Commercial Bank Kyrgyzstan\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "У пользователя с номером счета 12345 должен остаться на балансе $800",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "У пользователя с номером счета 111111 должен остаться на балансе $2200",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Transfer with MBank",
+    "description": "",
+    "id": "transfer-with-mbank",
+    "keyword": "Feature",
+    "uri": "features/TransferViaMBank.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Transaction"
+      }
+    ]
+  }
+]
